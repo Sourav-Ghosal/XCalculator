@@ -8,17 +8,10 @@ export default function Calculator(){
             return setTotal("Error");
         }
         else{
-            setTotal(eval(value))
-        }
-    }
-    const abc=()=>{
-        try{
             setTotal(eval(value));
         }
-        catch(err){
-            setTotal("Error");    
-        }
     }
+    
     
     return(
         <div className="container" style={{height:'100vh',width:'100%',display:'flex',justifyContent:"center",alignItems:"flex-start"}}>
@@ -52,7 +45,7 @@ export default function Calculator(){
                             <button className="button" type='button' value="C" onClick={(e)=>{setValue('');setTotal('')}} >C</button>
                             <button className="button" type='button' value="0" onClick={(e)=>setValue(value+e.target.value)} >0</button>
                             {/* <button className="button" type='button' value="=" onClick={(e)=>{setTotal(eval(value));ema()}} >=</button> */}
-                            <button className="button equal" type='button' value="=" onClick={(e)=>{ema();abc()}}>=</button>
+                            <button className="button equal" type='button' value="=" onClick={(e)=>{ema()}}>=</button>
                             <button className="button" type='button' value="/" onClick={(e)=>setValue(value+e.target.value)} >/</button>
                         </div>
                 </form>
