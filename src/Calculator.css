@@ -1,0 +1,17 @@
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 4px 4px 4px 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    font-weight: bold;
+}
+p{
+    opacity: 50%;
+}
